@@ -81,4 +81,6 @@ dependencies {
 
     implementation "com.intuit.ssp:ssp-android:$ssp"
     implementation "com.intuit.sdp:sdp-android:$ssp"
+
+    implementation 'com.wang.avi:library:2.1.3'
 }
