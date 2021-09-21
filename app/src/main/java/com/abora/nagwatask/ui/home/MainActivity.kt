@@ -50,7 +50,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         })
 
         homeViewModelImp.moviesDataLoaded.observe(this, Observer {
-            tvHome.text=it.toString()
+            recHomeMedia.adapter=HomeMediaAdapter(it) { pos, data, type ->
+                myToast("$type  $data")
+            }
         })
     }
 

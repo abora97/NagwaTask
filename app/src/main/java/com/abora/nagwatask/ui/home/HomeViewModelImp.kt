@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.abora.nagwatask.base.NetworkException
 import com.abora.nagwatask.base.NetworkResult
-import com.abora.nagwatask.retrofitDataModel.MoviesDataModel
+import com.abora.nagwatask.retrofitDataModel.MediaDataModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -16,7 +16,7 @@ class HomeViewModelImp @Inject constructor() : ViewModel() , HomeViewModel {
 
     val progressStatus = MutableLiveData<Boolean>()
     val showAlert = MutableLiveData<String>()
-    val moviesDataLoaded = MutableLiveData<List<MoviesDataModel>>()
+    val moviesDataLoaded = MutableLiveData<List<MediaDataModel>>()
 
     @Inject
     lateinit var sharedPreferences: SharedPreferences
